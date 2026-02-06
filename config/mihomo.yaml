@@ -180,15 +180,6 @@ dns:
     "rule-set:lan with real IP_class":
       - system
 
-#host设置
-hosts:  #在此可以手动指定一些fakeip以强制分流
-  dns.alidns.com:
-    - 223.5.5.5
-    - 223.6.6.6
-    - 2400:3200:baba::1
-    - 2400:3200::1
-  cdn.jsdelivr.net: cdn.jsdelivr.net.cdn.cloudflare.net 
-
 # 出站策略，锚点见yaml的顶部。
 proxy-groups:
   # 媒体服务
